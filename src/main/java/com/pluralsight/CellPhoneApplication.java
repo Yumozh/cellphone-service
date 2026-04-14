@@ -10,9 +10,11 @@ public class CellPhoneApplication {
 
         CellPhone phone1 = createCellPhoneFromInput();
         CellPhone phone2 = createCellPhoneFromInput();
-        displayCellPhone(phone1);
 
-        phone1.dial("88888888888");
+        displayCellPhone(phone1);
+        displayCellPhone(phone2);
+
+        phone1.dial(phone2.getPhoneNumber());
         phone2.dial(phone1.getPhoneNumber());
     }
 
