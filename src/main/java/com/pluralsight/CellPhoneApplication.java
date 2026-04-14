@@ -6,8 +6,9 @@ public class CellPhoneApplication {
     public static void main(String[] args) {
 
         CellPhone phone = new CellPhone();
-
         Scanner input = new Scanner(System.in);
+
+
         System.out.println("What is the serial number?");
         phone.setSerialNumber(input.nextInt());
         input.nextLine();
@@ -24,6 +25,10 @@ public class CellPhoneApplication {
         System.out.println("Who is the owner of the phone?");
         phone.setOwner(input.nextLine());
 
+        displayCellPhone(phone);
+    }
+
+    private static void displayCellPhone(CellPhone phone) {
         System.out.println();
         System.out.println("The serial number is: " + phone.getSerialNumber());
         System.out.println("The model is: " + phone.getModel());
