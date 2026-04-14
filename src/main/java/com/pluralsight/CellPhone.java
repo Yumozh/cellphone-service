@@ -16,7 +16,7 @@ public class CellPhone {
     }
 
     public void dial (String phoneNumber){
-
+        System.out.println();
         System.out.printf("%s`s phone is calling %s", getOwner(), phoneNumber);
     }
 

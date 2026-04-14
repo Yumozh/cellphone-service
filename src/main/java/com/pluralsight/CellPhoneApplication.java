@@ -3,11 +3,22 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class CellPhoneApplication {
+
+   static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-        CellPhone phone = new CellPhone();
-        Scanner input = new Scanner(System.in);
+        CellPhone phone1 = createCellPhoneFromInput();
+        CellPhone phone2 = createCellPhoneFromInput();
+        displayCellPhone(phone1);
 
+        phone1.dial("88888888888");
+        phone2.dial(phone1.getPhoneNumber());
+    }
+
+    private static CellPhone createCellPhoneFromInput() {
+
+        CellPhone phone = new CellPhone();
 
         System.out.println("What is the serial number?");
         phone.setSerialNumber(input.nextInt());
@@ -25,7 +36,7 @@ public class CellPhoneApplication {
         System.out.println("Who is the owner of the phone?");
         phone.setOwner(input.nextLine());
 
-        displayCellPhone(phone);
+        return phone;
     }
 
     private static void displayCellPhone(CellPhone phone) {
