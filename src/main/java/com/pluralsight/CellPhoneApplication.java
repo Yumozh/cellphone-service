@@ -9,9 +9,9 @@ public class CellPhoneApplication {
     public static void main(String[] args) {
 
         CellPhone phone1 = createCellPhoneFromInput();
-        CellPhone phone2 = createCellPhoneFromInput();
-
         displayCellPhone(phone1);
+
+        CellPhone phone2 = createCellPhoneFromInput();
         displayCellPhone(phone2);
 
         phone1.dial(phone2.getPhoneNumber());
