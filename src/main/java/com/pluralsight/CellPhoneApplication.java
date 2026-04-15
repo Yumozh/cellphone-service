@@ -8,6 +8,8 @@ public class CellPhoneApplication {
 
     public static void main(String[] args) {
 
+
+
         CellPhone phone1 = createCellPhoneFromInput();
         displayCellPhone(phone1);
 
