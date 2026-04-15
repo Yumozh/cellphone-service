@@ -54,5 +54,6 @@ public class CellPhoneApplication {
         System.out.println("The carrier is: " + phone.getCarrier());
         System.out.println("The phone number is: " + phone.getPhoneNumber());
         System.out.println("The owner of the phone is: " + phone.getOwner());
+        System.out.println();
     }
 }
