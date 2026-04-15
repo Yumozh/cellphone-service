@@ -8,6 +8,9 @@ public class CellPhoneApplication {
 
     public static void main(String[] args) {
 
+        CellPhone mainPhone = new CellPhone(7999, "XR", "Verizon",
+                                            "809-432-3232", "Yuliia Mozhchil"  );
+        displayCellPhone(mainPhone);
 
 
         CellPhone phone1 = createCellPhoneFromInput();
@@ -18,6 +21,7 @@ public class CellPhoneApplication {
 
         phone1.dial(phone2.getPhoneNumber());
         phone2.dial(phone1.getPhoneNumber());
+        phone2.dial(mainPhone.getPhoneNumber());
     }
 
     private static CellPhone createCellPhoneFromInput() {
